@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hoteles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--Hero section-->
+    <div class="main-wrapper">
+        <nav></nav>
+        <section class="hero">
+            <div class="main-container">
+                <div class="content-wrapper">
+                    <div class="width-70">
+                        <div class="col-2">
+                            <div class="col">
+                                <h1>Encontremos el hotel perfecto para ti</h1>
+                                <form id="buscar-hotel">
+                                    <div class="col-switch sombra">
+                                        <p>Soy cliente con recompensa</p>
+                                        <label class="switch">
+                                            <input type="checkbox" id="tipoDeCliente">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="fecha sombra">
+                                        <label for="fecha">Selecciona las fechas para tu reserva</label>
+                                        <input type="text" id="fecha" placeholder="Select dates" readonly>
+                                    </div>
+                                    <div class="btn-container">
+                                        <button type="submit" id="btn-buscar">Buscar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col img-portada">
+                                <img  class="img-portada" src="img/portada.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Resultados-->
+        <section>
+            <div class="main-container">
+                <div class="content-wrapper">
+                    <div class="width-70">
+                        <div class="hotel-container">
+                            <h2>Resultado de hoteles</h2>
+                            <div id="hoteles">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script/filtro.js"></script>
+</body>
+
+</html>

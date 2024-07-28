@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    padding-bottom: 100px;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hero{
+    background-color: rgb(252, 252, 250);
+    margin-bottom: 40px;
+    
+}
+.main-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.width-70 {
+    width: 70%;
+
+}
+
+.col-2 {
+    display: flex;
+    gap: 24px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 40px 0px;
+    width: 50%;
+    gap: 24px
+}
+
+.col-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+    background-color: white;
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+}
+
+.fecha input {
+    height: 40px;
+    border-radius: 12px;
+    border: solid 1px rgb(214, 214, 214);
+    padding: 0 8px;
+}
+
+
+
+#btn-buscar {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 10px 40px;
+    background-color: rgb(170, 163, 144);
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#btn-buscar:hover {
+    background-color: rgb(131, 122, 98);
+}
+
+.sombra {
+    -webkit-box-shadow: 5px 2px 15px 2px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 5px 2px 15px 2px rgba(242, 242, 242, 1);
+    box-shadow: 5px 2px 15px 2px rgba(242, 242, 242, 1);
+}
+
+.card-hotel {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: c;
+}
+
+span.fa.fa-star {
+    color: rgb(204, 204, 204);
+    /* Color de estrellas no calificadas */
+}
+
+span.fa.fa-star.checked {
+    color: orange;
+}
+
+.card-hotel.highlight {
+    -webkit-box-shadow: 5px 2px 15px 2px rgba(232,224,208,1);
+    -moz-box-shadow: 5px 2px 15px 2px rgba(232,224,208,1);
+    box-shadow: 5px 2px 15px 2px rgba(232,224,208,1);
+}
+
+.img-container {
+    width: 50%;
+}
+
+.img-hotel {
+    border-radius: 12px 0px 0px 12px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+    padding: 40px 50px;
+}
+
+.texto-hotel p {
+    font-size: 14px;
+}
+
+.precio {
+    font-size: 20px !important;
+}
+
+@media (max-width: 950px) {
+    .col-2 {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+
+    }
+
+    .card-hotel {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .img-hotel {
+        border-radius: 12px 12px 0px 0px;
+        object-fit: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .img-portada{
+        display: none;
+    }
+}
